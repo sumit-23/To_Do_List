@@ -1,0 +1,192 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+}
+
+.wrap-container {
+  background-color: rgb(241, 178, 243);
+  min-width: 30vw;
+  min-height: 75vh;
+  border-radius: 5px;
+  box-shadow: 3px 6px 45px rgb(238, 19, 209);
+  padding: 0.5% 2%;
+}
+
+.header {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  font-family: sans-serif;
+  margin: 7% 0%;
+}
+.form {
+  margin-bottom: 5%;
+}
+
+.task-input {
+  padding: 4%;
+  outline: none;
+  margin-right: 3%;
+  min-width: 75%;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(44, 44, 44);
+  color: white;
+  font-weight: 500;
+}
+.add-btn {
+  padding: 4%;
+  min-width: 20%;
+  border-radius: 5px;
+  border: none;
+  background-color: red;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-btn:disabled {
+  opacity: 0.6;
+}
+
+.task-list {
+  list-style: none;
+  width: 95%;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgb(241, 178, 243);
+  margin: 2%;
+  padding: 2%;
+  display: flex;
+}
+
+.list {
+  background-color: rgb(241, 178, 243);
+  border: none;
+  width: 70%;
+  outline: none;
+  font-size: 1rem;
+}
+
+.complete-button,
+.edit-button,
+.delete-button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 1.3rem;
+}
+.complete-button {
+  margin-right: 10px;
+}
+.edit-button {
+  margin-right: 10px;
+}
+.fa-circle-check {
+  color: green;
+}
+.fa-pen-to-square {
+  color: rgb(211, 177, 26);
+}
+
+.fa-trash {
+  color: rgba(255, 0, 0, 0.774);
+}
+
+.complete {
+  text-decoration-style: solid;
+  text-decoration: line-through;
+  text-decoration-color: black;
+  opacity: 0.6;
+}
+.message {
+  text-align: center;
+  position: relative;
+}
+.message p {
+  font-size: 2.3rem;
+  animation: blinker 1s linear infinite;
+  color: red;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.message button {
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 14px 30px;
+  border: 3px solid transparent;
+  border-radius: 60px;
+  border-image: linear-gradient(
+      to right,
+      #ff6a00,
+      #ee0979,
+      #9000c4,
+      #4a00e0,
+      #00c2ff,
+      #00ff9c
+    )
+    1;
+  border-image-slice: 1;
+  animation: gradient-border 2s infinite linear;
+  margin: 60px;
+}
+@keyframes gradient-border {
+  0% {
+    border-image: linear-gradient(
+        to right,
+        #ff6a00,
+        #ee0979,
+        #9000c4,
+        #4a00e0,
+        #00c2ff,
+        #00ff9c
+      )
+      1;
+  }
+  50% {
+    border-image: linear-gradient(
+        to right,
+        #00ff9c,
+        #00c2ff,
+        #4a00e0,
+        #9000c4,
+        #ee0979,
+        #ff6a00
+      )
+      1;
+  }
+  100% {
+    border-image: linear-gradient(
+        to right,
+        #ff6a00,
+        #ee0979,
+        #9000c4,
+        #4a00e0,
+        #00c2ff,
+        #00ff9c
+      )
+      1;
+  }
+}

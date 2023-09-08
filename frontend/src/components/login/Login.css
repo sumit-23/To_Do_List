@@ -1,0 +1,44 @@
+.login-container {
+  position: absolute;
+  padding: 30px;
+  top: 140px;
+  left: 35%;
+  background-color: aquamarine;
+  border-radius: 5px;
+  box-shadow: 3px 6px 45px rgb(16, 134, 134);
+}
+
+.login-container h1 {
+  font-size: 2rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.input {
+  margin: 35px 70px;
+  font-size: 1.2rem;
+}
+
+.input input {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.login-container button {
+  position: relative;
+  left: 35%;
+  margin: 20px 0px;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.error {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  color: red;
+  text-align: center;
+  font-weight: bold;
+}
